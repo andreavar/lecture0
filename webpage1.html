@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	
+	<style>
+		table{
+			border: 2px solid black;
+			border-collapse: collapse;
+			width: 500px;
+			margin: 5px;
+			font-size: 20px;
+		}
+		th,td{
+			border: 1px solid black;
+			padding: 5px;
+			text-align: center;
+		}
+
+		th{
+			background: LightGreen;
+		}
+
+		.encabezado{
+			border: 3px dotted goldenrod;
+			background-color:gold;
+			font-family: "Trebuchet MS", Helvetica,sans-serif;
+			font-size: 15px;
+			text-align: center;
+		}
+
+		.contenedor{
+		    position: relative;
+		    display: inline-block;
+		    text-align: center;
+		}
+		 
+
+		.texto-encima{
+		    position: absolute;
+		    top: 10px;
+		    left: 10px;
+		    background-color:white;
+			opacity:0.6;
+			width:200px;
+			height:70px;
+		    
+		}
+		.centrado{
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    background-color:white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="encabezado">
+		<h1>Mundo HTML</h1> 
+	</div>
+
+	<div class="contenedor">
+  		<img src="banner.jpg" width="100%" />
+  		<div class="texto-encima"><h1>Presidentes</h1></div>
+  		<div class="centrado">
+		<table>
+			<tr>
+				<th>Ventajas</th>
+				<th>Desventajas</th>
+			</tr>
+
+			<tr>
+				<td>
+					<ul>
+						<li>Sencillo</li>
+						<li>Archivos pequeños</li>
+						<li>Despliegue rápido</li>
+					</ul>
+				</td>
+
+				<td>
+					<ul>
+						<li>Lenguaje estático</li>
+						<li>Diseño lento</li>
+						<li>Etiquetas limitadas</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+
+  		</div>
+	</div>
+
+</body>
+</html>
